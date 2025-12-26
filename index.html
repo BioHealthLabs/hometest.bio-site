@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>HomeTest.bio – At-Home Testing Explained (Blood, DNA, STD &amp; More)</title>
+  <meta name="description" content="Independent, plain-language education on at-home testing: how home tests work, what they can and can’t tell you, privacy basics, and when to use lab or clinician follow-up." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://hometest.bio/" />
+
+  <!-- Shared site stylesheet (light) -->
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- GA4 (your network code) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=P97L90X454"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "P97L90X454", { anonymize_ip: true });
+  </script>
+
+  <!-- Minimal page-specific tweaks (keeps compatibility with your Genectics light styles) -->
+  <style>
+    .hero-actions { display:flex; gap:12px; flex-wrap:wrap; margin-top: 14px; }
+    .note { font-size: 0.95rem; opacity: 0.92; }
+    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 0.92em; }
+    .pill { display:inline-block; padding: 6px 10px; border-radius: 999px; font-size: 0.88rem; }
+    .pill-soft { background: rgba(15, 23, 42, 0.06); border: 1px solid rgba(15, 23, 42, 0.12); }
+    .grid-2 { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    @media (max-width: 860px){ .grid-2 { grid-template-columns: 1fr; } }
+    .linklist { margin: 10px 0 0 0; padding-left: 18px; }
+    .linklist li { margin: 6px 0; }
+  </style>
+
+  <!-- JSON-LD: WebSite + Organization (light, safe for authority node) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"HomeTest.bio",
+    "url":"https://hometest.bio/",
+    "inLanguage":"en",
+    "publisher":{
+      "@type":"Organization",
+      "name":"ronarn AS",
+      "url":"https://organization.bio"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HEADER (full) -->
+    <header>
+      <div class="brand">
+        <div class="brand-name">HomeTest.bio</div>
+        <div class="brand-tagline">
+          Independent education on at-home medical &amp; wellness testing.
+        </div>
+      </div>
+
+      <div class="trust-tags">
+        <span class="trust-tag">Educational only</span>
+        <span class="trust-tag">No paid rankings</span>
+        <span class="trust-tag">Privacy-first guidance</span>
+      </div>
+
+      <nav class="tabs" aria-label="Primary">
+        <a class="tab is-active" href="/" aria-current="page">Overview</a>
+        <a class="tab" href="/blood-tests/">Blood tests</a>
+        <a class="tab" href="/dna-tests/">DNA tests</a>
+        <a class="tab" href="/std-tests/">STD tests</a>
+        <a class="tab" href="/fertility-tests/">Fertility</a>
+        <a class="tab" href="/accuracy-and-limits/">Accuracy</a>
+        <a class="tab" href="/privacy-and-data/">Privacy</a>
+        <a class="tab" href="/about.html">About</a>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div>
+          <h1 id="hero-heading" class="hero-title">
+            At-home testing explained — without hype or paid rankings.
+          </h1>
+
+          <p class="hero-subtitle">
+            Home tests can be genuinely useful: they reduce friction, improve follow-through, and make certain
+            checks accessible. But they also have limits — and those limits matter most when results affect
+            medical decisions.
+          </p>
+
+          <ul class="hero-list">
+            <li>Understand how at-home tests work (sample → lab → report).</li>
+            <li>Know what “accuracy” really means: false positives, false negatives, and timing.</li>
+            <li>Get privacy basics: what data is collected and what “sharing” can look like.</li>
+          </ul>
+
+          <div class="hero-highlight">
+            This site is educational only. It does not provide medical advice and does not replace professional care.
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn-primary" href="#start">
+              Start here
+              <span class="chevron">›</span>
+            </a>
+            <a class="btn-secondary" href="/accuracy-and-limits/">
+              Accuracy &amp; limitations
+            </a>
+            <a class="btn-secondary" href="/privacy-and-data/">
+              Privacy &amp; data
+            </a>
+          </div>
+
+          <p class="note" style="margin-top: 12px;">
+            Quick rule of thumb: if a result could change medication, pregnancy decisions, or serious diagnoses,
+            treat a home test as a <span class="pill pill-soft">screening step</span> — not the final word.
+          </p>
+        </div>
+
+        <aside class="hero-aside">
+          <p class="hero-note">
+            <strong>When to escalate:</strong> severe symptoms, rapidly worsening condition, high-risk pregnancy,
+            chest pain, neurologic symptoms, or any result you can’t interpret confidently.
+          </p>
+          <p class="hero-note" style="margin-top: 10px;">
+            <strong>When home tests shine:</strong> recurring monitoring, low-friction screening,
+            and situations where follow-up pathways are clear.
+          </p>
+        </aside>
+      </section>
+
+      <!-- START / HUB OVERVIEW -->
+      <section id="start" class="card" aria-labelledby="start-heading">
+        <h2 id="start-heading" class="section-title">What “at-home testing” usually means</h2>
+        <p class="section-subtitle">
+          Most reputable at-home tests follow the same pipeline:
+          you collect a sample at home (finger-prick blood, saliva, swab), send it to a lab, and receive a report.
+          The key differences are <strong>what is measured</strong>, <strong>how the sample is handled</strong>,
+          and <strong>how results are communicated</strong>.
+        </p>
+
+        <div class="grid-2" style="margin-top: 14px;">
+          <article class="card">
+            <h3 style="margin-top:0;">1) Sample collection</h3>
+            <p>
+              Collection quality matters. Many “accuracy issues” come from sampling errors:
+              insufficient blood volume, contamination, or timing (e.g., too early after exposure).
+            </p>
+            <ul class="linklist">
+              <li>Follow the kit’s timing guidance precisely.</li>
+              <li>Use clean technique; avoid reusing lancets or swabs.</li>
+              <li>If instructions say <span class="kbd">fasting</span>, treat that as non-optional.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 style="margin-top:0;">2) Lab processing</h3>
+            <p>
+              Many tests are processed in accredited labs, but lab standards and reporting formats differ.
+              Results can be “technically correct” yet easy to misinterpret without context.
+            </p>
+            <ul class="linklist">
+              <li>Prefer tests with clear methodology and reference ranges.</li>
+              <li>Look for transparent resampling / retest policy.</li>
+              <li>Understand what is <em>not</em> measured (common in wellness panels).</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="grid-2" style="margin-top: 16px;">
+          <article class="card">
+            <h3 style="margin-top:0;">3) Interpretation</h3>
+            <p>
+              A number isn’t always an answer. Risk scores, “optimal ranges,” and wellness insights can vary
+              by country, regulator, and clinical practice.
+            </p>
+            <ul class="linklist">
+              <li>Use trends over time, not one-off readings, when relevant.</li>
+              <li>Confirm abnormal results with standard lab tests where appropriate.</li>
+              <li>For symptoms: treat numbers as supporting evidence, not diagnosis.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 style="margin-top:0;">4) Privacy &amp; data</h3>
+            <p>
+              Home testing often involves sensitive data. You should know what is stored, how long,
+              and whether data is used for research, marketing, or third-party sharing.
+            </p>
+            <ul class="linklist">
+              <li>Read the privacy policy before purchase.</li>
+              <li>Prefer providers with clear deletion / retention options.</li>
+              <li>Understand the difference between de-identified and identifiable data.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- CATEGORY NAV -->
+      <section class="card" aria-labelledby="categories-heading">
+        <h2 id="categories-heading" class="section-title">Major categories</h2>
+        <p class="section-subtitle">
+          These hubs explain each test type in plain language — what it measures, when it helps,
+          and the most common pitfalls. This site does not rank products.
+        </p>
+
+        <div class="grid" aria-label="Categories">
+          <article class="card">
+            <h3>Blood tests</h3>
+            <p>
+              Finger-prick panels and lab-processed kits for metabolic health, inflammation markers,
+              hormones, and more. Best when you have a clear follow-up plan for abnormal results.
+            </p>
+            <div class="hero-actions">
+              <a href="/blood-tests/" class="btn-primary">Blood tests hub ›</a>
+              <a href="https://screenblood.com/" class="btn-secondary" rel="noopener">Blood test comparisons (screenblood.com) ›</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>DNA tests</h3>
+            <p>
+              Ancestry vs. health vs. wellness DNA reports are often mixed up. Learn what consumer DNA can
+              and can’t tell you, plus privacy trade-offs and typical limitations.
+            </p>
+            <div class="hero-actions">
+              <a href="/dna-tests/" class="btn-primary">DNA tests hub ›</a>
+              <a href="https://www.genectics.com/" class="btn-secondary" rel="noopener">DNA kit comparison (Genectics.com) ›</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>STD tests</h3>
+            <p>
+              Timing, window periods, and sample type matter. Understand what “negative” means at different
+              stages and when to confirm via clinics.
+            </p>
+            <div class="hero-actions">
+              <a href="/std-tests/" class="btn-primary">STD tests hub ›</a>
+              <a href="/accuracy-and-limits/" class="btn-secondary">Window periods &amp; false negatives ›</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Fertility &amp; hormones</h3>
+            <p>
+              Ovulation, sperm metrics, and hormone panels can be helpful — but interpretation is nuanced
+              and depends on age, cycle timing, and symptoms.
+            </p>
+            <div class="hero-actions">
+              <a href="/fertility-tests/" class="btn-primary">Fertility hub ›</a>
+              <a href="/privacy-and-data/" class="btn-secondary">Sensitive data checklist ›</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ACCURACY -->
+      <section class="card" aria-labelledby="accuracy-heading">
+        <h2 id="accuracy-heading" class="section-title">Accuracy: what people get wrong</h2>
+        <p class="section-subtitle">
+          “Accuracy” is not a single number. It depends on timing, sample handling, test method,
+          prevalence of the condition, and what the test is designed to do (screen vs diagnose).
+        </p>
+
+        <div class="grid-2" style="margin-top: 14px;">
+          <article class="card">
+            <h3 style="margin-top:0;">False positives</h3>
+            <p>
+              A positive result can be real — or it can be caused by cross-reactivity, contamination,
+              or low prevalence (rare conditions have more false alarms).
+            </p>
+            <p class="note">
+              Practical approach: confirm positives with standard clinical pathways where possible.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 style="margin-top:0;">False negatives</h3>
+            <p>
+              A negative result does not always mean “no issue.” Many tests have window periods or require
+              a threshold to trigger a positive.
+            </p>
+            <p class="note">
+              Practical approach: test at the right time and repeat when instructions recommend it.
+            </p>
+          </article>
+        </div>
+
+        <div class="hero-actions" style="margin-top: 12px;">
+          <a href="/accuracy-and-limits/" class="btn-primary">Read: Accuracy &amp; limitations ›</a>
+          <a href="/privacy-and-data/" class="btn-secondary">Read: Privacy &amp; data ›</a>
+        </div>
+      </section>
+
+      <!-- DISCLAIMER -->
+      <section class="disclaimer">
+        <p>
+          HomeTest.bio provides educational content only and does not provide medical advice, diagnosis, or treatment.
+          If you have symptoms or urgent concerns, contact a licensed healthcare professional.
+        </p>
+        <p>
+          External links may point to independent resources within the broader ronarn network.
+          Any commercial relationships, if introduced later, will be clearly disclosed on the relevant pages.
+        </p>
+      </section>
+
+    </main>
+
+    <!-- FOOTER (your standard network footer) -->
+    <footer class="site-footer">
+      <div class="footer-main">
+        <span>© <span id="year"></span> Retinol.bio – Evidence-based retinol education.</span>
+        <span>Operated by ronarn AS, Norway. Independent information site with links to Retynol.com.</span>
+        <span>Contact: <a href="mailto:info@retinol.bio">info@retinol.bio</a></span>
+        <span>Business address: Pb. 1010 Lillestrøm Syd, 2012 Lillestrøm, Norway</span>
+      </div>
+
+      <nav class="footer-links">
+        <span>
+          <a href="https://privacypolicy.bio" target="_blank" rel="noopener">Privacy Policy</a> ·
+          <a href="https://terms.bio" target="_blank" rel="noopener">Terms</a> ·
+          <a href="https://disclaimer.bio" target="_blank" rel="noopener">Medical &amp; Affiliate Disclaimer</a> ·
+          <a href="https://disclosure.bio" target="_blank" rel="noopener">Affiliate Disclosure</a> ·
+          <a href="https://policies.bio" target="_blank" rel="noopener">Policies</a> ·
+          <a href="https://transparency.bio" target="_blank" rel="noopener">Transparency</a>
+        </span>
+      </nav>
+
+      <nav class="footer-links">
+        <span>
+          <a href="https://organization.bio" target="_blank" rel="noopener">About the Publisher</a> ·
+          <a href="https://contactus.bio" target="_blank" rel="noopener">Contact</a> ·
+          <a href="https://affiliates.bio" target="_blank" rel="noopener">Affiliates</a> ·
+          <a href="https://advertisement.bio" target="_blank" rel="noopener">Advertisements</a> ·
+          <a href="https://guides.bio" target="_blank" rel="noopener">Editorial Guides</a> ·
+          <a href="https://ethics.bio" target="_blank" rel="noopener">Ethics</a> ·
+          <a href="https://standards.bio" target="_blank" rel="noopener">Editorial Standards</a> ·
+          <a href="https://audits.bio" target="_blank" rel="noopener">Audits</a> ·
+          <a href="https://verification.bio" target="_blank" rel="noopener">Verification</a> ·
+          <a href="https://indexing.bio" target="_blank" rel="noopener">Indexing</a> ·
+          <a href="https://retynol.com/" target="_blank" rel="noopener">Retynol.com – Product comparison</a>
+        </span>
+      </nav>
+    </footer>
+
+  </div>
+
+  <script>
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+```0
